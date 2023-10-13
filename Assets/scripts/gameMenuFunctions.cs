@@ -9,6 +9,7 @@ public class gameMenuFunctions : MonoBehaviour
 
     public void closeMenu() {
         gameMenu.SetActive(false);
+        Cursor.visible = false;
     }
 
     public void goToMainMenu() {

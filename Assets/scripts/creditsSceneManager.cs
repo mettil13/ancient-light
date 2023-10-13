@@ -5,9 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class creditsSceneManager : MonoBehaviour
 {
-    public int sceneDuration;
 
-    // Update is called once per frame
+    private void Start() {
+        Cursor.visible = false;
+    }
+
     void Update()
     {
         if(Input.anyKey) {

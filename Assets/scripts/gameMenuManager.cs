@@ -11,6 +11,7 @@ public class gameMenuManager : MonoBehaviour
     void Start()
     {
         menu.SetActive(false);
+        Cursor.visible = false;
     }
 
     // Update is called once per frame
@@ -24,8 +25,10 @@ public class gameMenuManager : MonoBehaviour
     private void switchMenu() {
         if (menu.activeSelf) {
             menu.SetActive(false);
+            Cursor.visible = false;
         } else {
             menu.SetActive(true);
+            Cursor.visible = true;
         }
     }
 }

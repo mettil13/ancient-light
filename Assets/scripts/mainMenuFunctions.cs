@@ -10,6 +10,8 @@ public class mainMenuFunctions : MonoBehaviour
     public GameObject fpsLimitDropdown;
 
     private void Start() {
+        Cursor.visible = true;
+
         volumeSlider.GetComponent<Slider>().value = (int) (AudioListener.volume * 100);
 
         QualitySettings.vSyncCount = 0;
