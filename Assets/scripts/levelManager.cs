@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class levelManager : MonoBehaviour
 {
@@ -50,8 +51,8 @@ public class levelManager : MonoBehaviour
             gameplayCharacter.GetComponent<Rigidbody>().AddForce(new Vector3(500, -150, 0));
         }
 
-        if (currentScene == scene.FinalCutScene && currentTime - startTime >= 90) {
-            Debug.Log("Fine");
+        if (currentScene == scene.FinalCutScene && currentTime - startTime >= 42) {
+            SceneManager.LoadScene("Credits");
         }
 
         // the final cutscene is activated by an external script
